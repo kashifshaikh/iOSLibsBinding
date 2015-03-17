@@ -1,0 +1,19 @@
+PODS:
+  - DejalActivityView (1.2)
+  - FLKAutoLayout (0.2.1)
+  - ORStackView (2.0.0):
+    - FLKAutoLayout (~> 0.1)
+  - PureLayout (2.0.5)
+
+DEPENDENCIES:
+  - DejalActivityView
+  - ORStackView (~> 2.0)
+  - PureLayout
+
+SPEC CHECKSUMS:
+  DejalActivityView: ef0970deefe891fefd57af27765ddb21a8265755
+  FLKAutoLayout: 8a973ab83832a8527626127193643f3c8ea157d5
+  ORStackView: b6ccb2d7a1730548631a8a2749ba3c1bf12168db
+  PureLayout: 63a3257320223e8edddcd3afb407445f85a6bf74
+
+COCOAPODS: 0.36.0

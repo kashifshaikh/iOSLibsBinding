@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{F5B4F3BC-B597-4E2B-B552-EF5D8A32436F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A9EEEBF8-030C-4878-A1F2-4D1711A71969}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iOSLibsBinding</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>iOSLibsBinding</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="FLKAutoLayout\" />
+    <Folder Include="ORStackView\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="PureLayout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="DejalActivityView\ApiDefinitions.cs" />
+    <ObjcBindingApiDefinition Include="ORStackView\ApiDefinitions.cs" />
+    <ObjcBindingApiDefinition Include="FLKAutoLayout\ApiDefinitions.cs" />
+    <ObjcBindingApiDefinition Include="PureLayout\ApiDefinitions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="DejalActivityView\StructsAndEnums.cs" />
+    <ObjcBindingCoreSource Include="PureLayout\StructsAndEnums.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
+  <ItemGroup>
+    <ObjcBindingNativeLibrary Include="..\iOSLibs\build\universal\Release\DejalActivityView.a">
+      <Link>DejalActivityView\DejalActivityView.a</Link>
+    </ObjcBindingNativeLibrary>
+    <ObjcBindingNativeLibrary Include="..\iOSLibs\build\universal\Release\FLKAutoLayout.a">
+      <Link>FLKAutoLayout\FLKAutoLayout.a</Link>
+    </ObjcBindingNativeLibrary>
+    <ObjcBindingNativeLibrary Include="..\iOSLibs\build\universal\Release\ORStackView.a">
+      <Link>ORStackView\ORStackView.a</Link>
+    </ObjcBindingNativeLibrary>
+    <ObjcBindingNativeLibrary Include="..\iOSLibs\build\universal\Release\PureLayout.a">
+      <Link>PureLayout\PureLayout.a</Link>
+    </ObjcBindingNativeLibrary>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DejalActivityView\DejalActivityView.linkwith.cs">
+      <DependentUpon>DejalActivityView.a</DependentUpon>
+    </Compile>
+    <Compile Include="FLKAutoLayout\FLKAutoLayout.linkwith.cs">
+      <DependentUpon>FLKAutoLayout.a</DependentUpon>
+    </Compile>
+    <Compile Include="ORStackView\ORStackView.linkwith.cs">
+      <DependentUpon>ORStackView.a</DependentUpon>
+    </Compile>
+    <Compile Include="PureLayout\PureLayout.linkwith.cs">
+      <DependentUpon>PureLayout.a</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\UniversalLib.sh" />
+    <None Include="Scripts\SharpieBind.sh" />
+  </ItemGroup>
+</Project>

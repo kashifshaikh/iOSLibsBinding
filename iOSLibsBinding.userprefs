@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="iOSLibsBindingSample/iOSLibsBindingSample.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOSLibsBinding/DejalActivityView/ApiDefinitions.cs">
+    <Files>
+      <File FileName="iOSLibsBinding/DejalActivityView/ApiDefinitions.cs" Line="11" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

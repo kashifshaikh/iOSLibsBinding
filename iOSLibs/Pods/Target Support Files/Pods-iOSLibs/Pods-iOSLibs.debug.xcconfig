@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DejalActivityView" "${PODS_ROOT}/Headers/Public/FLKAutoLayout" "${PODS_ROOT}/Headers/Public/ORStackView" "${PODS_ROOT}/Headers/Public/PureLayout"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/DejalActivityView" -isystem "${PODS_ROOT}/Headers/Public/FLKAutoLayout" -isystem "${PODS_ROOT}/Headers/Public/ORStackView" -isystem "${PODS_ROOT}/Headers/Public/PureLayout"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-iOSLibs-DejalActivityView" -l"Pods-iOSLibs-FLKAutoLayout" -l"Pods-iOSLibs-ORStackView" -l"Pods-iOSLibs-PureLayout" -framework "UIKit"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

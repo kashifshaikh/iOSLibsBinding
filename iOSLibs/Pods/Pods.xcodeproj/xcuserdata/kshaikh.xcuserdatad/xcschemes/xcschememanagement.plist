@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-iOSLibs-DejalActivityView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iOSLibs-FLKAutoLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iOSLibs-ORStackView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iOSLibs-PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-iOSLibs.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>02A5D27D45F65411EC217C44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>37CB4C613306FA05A936FC42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5960DAFAC263FBF0E2AFC5BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CBEC3E80B6CE24840DB8C81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7F4462E773F7795BA09036F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
