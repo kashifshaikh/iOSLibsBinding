@@ -1,3 +1,5 @@
+#!/bin/sh
+
 CONFIGS="Debug Release"
 
 DEVICE_BUILD="iphoneos"

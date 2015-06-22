@@ -1,8 +1,16 @@
 ﻿<Properties StartupItem="iOSLibsBindingSample/iOSLibsBindingSample.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOSLibsBinding/DejalActivityView/ApiDefinitions.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOSLibsBinding/ORStackView/ApiDefinitions.cs">
     <Files>
-      <File FileName="iOSLibsBinding/DejalActivityView/ApiDefinitions.cs" Line="11" Column="29" />
+      <File FileName="iOSLibsBindingSample/iOSLibsBindingSampleViewController.cs" Line="8" Column="40" />
+      <File FileName="iOSLibsBinding/ORStackView/ApiDefinitions.cs" Line="16" Column="3" />
+      <File FileName="iOSLibsBinding/DejalActivityView/ApiDefinitions.cs" Line="8" Column="26" />
+      <File FileName="iOSLibsBinding/FLKAutoLayout/ApiDefinitions.cs" Line="13" Column="3" />
+      <File FileName="iOSLibsBinding/DejalActivityView/DejalActivityView.linkwith.cs" Line="1" Column="1" />
+      <File FileName="iOSLibsBinding/PureLayout/StructsAndEnums.cs" Line="36" Column="63" />
+      <File FileName="iOSLibsBinding/PureLayout/ApiDefinitions.cs" Line="14" Column="51" />
+      <File FileName="iOSLibsBinding/PureLayout/PureLayout.linkwith.cs" Line="1" Column="1" />
+      <File FileName="iOSLibsBinding/DejalActivityView/StructsAndEnums.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
