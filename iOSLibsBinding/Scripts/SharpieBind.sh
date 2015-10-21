@@ -1,7 +1,7 @@
 #!/bin/sh
 
-SDK="iphoneos8.2"
 API="classic" # can be "unified" as well
+SDK="iphoneos9.0"
 
 if [ ! -f "iOSLibsBinding.csproj" ];then
 	echo "You must run this script from iOS Binding Project directory";
@@ -39,21 +39,22 @@ if [ ! -d "$POD_HEADERS" ]; then
 fi
 
 TARGET_FILES="${POD_DIR}/Target Support Files"
-IOSLIB_TARGET_FILES="${TARGET_FILES}/Pods-iOSLibs"
+IOSLIB_TARGET_FILES="${TARGET_FILES}/${POD}"
 if [ ! -d "$IOSLIB_TARGET_FILES" ]; then
 	echo "$IOSLIB_TARGET_FILES: Does not exist"
 	exit 1
 fi
 
-POD_PCH="${TARGET_FILES}/Pods-iOSLibs-${POD}/Pods-iOSLibs-${POD}-prefix.pch"
+POD_PCH="${TARGET_FILES}/${POD}/${POD}-prefix.pch"
 if [ ! -f "$POD_PCH" ]; then
 	echo "$POD_PCH: Does not exist"
 	exit 1
 fi
 
+
 ls ${POD_HEADERS}
 #-I"${IOSLIB_TARGET_FILES}" -I"${POD_HEADERS}" -scope "$IOSLIB_TARGET_FILES" -scope ${POD_HEADERS}
-sharpie bind -${API} -o ${OUTPUT_DIR} -n "iOSLibsBinding.${POD}" -sdk ${SDK} ${POD_HEADERS}/* -c -I"${IOSLIB_TARGET_FILES}" -include "${POD_PCH}"
+sharpie bind -o ${OUTPUT_DIR} -n "iOSLibsBinding.${POD}" -sdk ${SDK} ${POD_HEADERS}/* -c -I"${IOSLIB_TARGET_FILES}" -include "${POD_PCH}"
 
 echo "--------"
 echo "Binding complete. Check directory \"$OUTPUT_DIR\" for results and import into Xamarin"
